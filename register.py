@@ -1,3 +1,5 @@
+# Register the model manually by replacing all the files train.py generates into models/
+
 import mlflow
 import mlflow.transformers
 from mlflow import MlflowClient
@@ -10,8 +12,13 @@ REGISTERED_MODEL_NAME = "sentiment-classifier"
 MODEL_PATH = "models/sentiment_bert"
 
 # paste the numbers Colab printed after training
+'''
+Update these values
+'''
 TEST_ACCURACY = 0.7948
 TEST_F1 = 0.7953
+
+
 
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
