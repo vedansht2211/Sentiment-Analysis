@@ -1,0 +1,15 @@
+torch
+transformers
+datasets
+accelerate
+scikit-learn
+pandas
+numpy
+mlflow
+
+fastapi
+uvicorn
+pydantic
+
+pytest
+httpx
